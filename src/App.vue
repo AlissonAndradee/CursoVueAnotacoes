@@ -2,9 +2,9 @@
   <div id="app">
     <input type="text" v-model="clienteVictor.nome"><br>
     <input type="text" v-model="clienteVictor.email">
-    <Cliente :cliente="clienteVictor"/>
-    <Cliente :cliente="clienteVictor"/>
-    <Cliente :cliente="clienteVictor"/>
+    <Cliente :cliente="clienteVictor" :showAge="true"/>
+    <Cliente :cliente="clienteVictor" :showAge="false"/>
+    <Cliente :cliente="clienteVictor" :showAge="true"/>
   </div>
 </template>
 
