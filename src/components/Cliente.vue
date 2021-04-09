@@ -1,12 +1,9 @@
 <template>
     
     <div id="cliente">
-        <input type="text" v-model="nome">
-        <hr>
-        <input type="text" v-model="descrição">
-        <h2 id="cliente-nome">{{ nome }}</h2>
-        <p> descrição do cliente: {{ descrição }} </p>
-        
+        <h4>Nome: {{ cliente.nome }} </h4>
+        <p>Email: {{ cliente.email }}</p>
+        <p>Idade: {{ cliente.idade }}</p>
     </div>
     
 </template>
@@ -15,19 +12,25 @@
 export default {
     data(){
         return {
-            nome: "Alisson Andrade",
-            numero: "",
-            email: "",
-            idade: 0,
-            descrição: "Lorem Ipsun Lorem Ipsun"
-        }
+        }  
+    },
+    props: {
+        nome: String,
+        email: String,
+        idade: Number,
+        cliente: Object
+
     }
 }
 </script>
 
 <style scoped>
     #cliente{
-        color:blue;
+        background-color: #ECE5E3;
+        max-width: 600px;
+        height: 100px;
+        padding: 2%;
+        margin-top: 2%;
     }
 
 </style>
