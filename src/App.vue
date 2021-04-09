@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <Cliente/>
   </div>
 </template>

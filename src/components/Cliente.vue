@@ -1,9 +1,9 @@
 <template>
     
     <div id="cliente">
-        <input type="text" :value="nome">
+        <input type="text" v-model="nome">
         <hr>
-        <input type="text" :value="descrição">
+        <input type="text" v-model="descrição">
         <h2 id="cliente-nome">{{ nome }}</h2>
         <p> descrição do cliente: {{ descrição }} </p>
         
