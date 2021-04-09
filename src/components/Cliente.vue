@@ -1,26 +1,30 @@
 <template>
     
     <div id="cliente">
-        <h2 id="cliente-nome">Cliente aqui - Componente aqui</h2>
-        <h3> descrição do cliente: hahahahahahahhahahaha </h3>
-        <hr>
+        <h2 id="cliente-nome">{{ nome }}</h2>
+        <p> descrição do cliente: {{ descrição }} </p>
+        
     </div>
     
 </template>
 
 <script>
 export default {
-    
+    data(){
+        return {
+            nome: "Alisson Andrade",
+            numero: "",
+            email: "",
+            idade: 0,
+            descrição: "Lorem Ipsun Lorem Ipsun"
+        }
+    }
 }
 </script>
 
 <style scoped>
     #cliente{
         color:blue;
-        background-color: black;
     }
 
-    #cliente-nome{
-        color:blanchedalmond;
-    }
 </style>
